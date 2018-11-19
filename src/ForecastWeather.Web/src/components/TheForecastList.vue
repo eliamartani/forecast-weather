@@ -214,8 +214,6 @@ export default {
         }
       }
 
-      console.log(today, this.result.today.date)
-
       // look if already there is a register for today's weather
       if (store.list.filter(item => item.date === today).length === 0) {
         store.list.push({ ...this.result.today, date: today })

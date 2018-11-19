@@ -1,0 +1,1461 @@
+[{
+  "city": "Aachen",
+  "city_normalized": "aachen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Aalen",
+  "city_normalized": "aalen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Aichach",
+  "city_normalized": "aichach",
+  "admin": "Bavaria"
+}, {
+  "city": "Altchemnitz",
+  "city_normalized": "altchemnitz",
+  "admin": "Saxony"
+}, {
+  "city": "Altenburg",
+  "city_normalized": "altenburg",
+  "admin": "Thuringia"
+}, {
+  "city": "Altenkirchen",
+  "city_normalized": "altenkirchen",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Altötting",
+  "city_normalized": "altotting",
+  "admin": "Bavaria"
+}, {
+  "city": "Alzey",
+  "city_normalized": "alzey",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Amberg",
+  "city_normalized": "amberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Annaberg-Buchholz",
+  "city_normalized": "annaberg-buchholz",
+  "admin": "Saxony"
+}, {
+  "city": "Ansbach",
+  "city_normalized": "ansbach",
+  "admin": "Bavaria"
+}, {
+  "city": "Apolda",
+  "city_normalized": "apolda",
+  "admin": "Thuringia"
+}, {
+  "city": "Arnstadt",
+  "city_normalized": "arnstadt",
+  "admin": "Thuringia"
+}, {
+  "city": "Aschaffenburg",
+  "city_normalized": "aschaffenburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Augsburg",
+  "city_normalized": "augsburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Aurich",
+  "city_normalized": "aurich",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Bad Dürkheim",
+  "city_normalized": "bad durkheim",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Bad Ems",
+  "city_normalized": "bad ems",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Bad Fallingbostel",
+  "city_normalized": "bad fallingbostel",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Bad Hersfeld",
+  "city_normalized": "bad hersfeld",
+  "admin": "Hesse"
+}, {
+  "city": "Bad Homburg",
+  "city_normalized": "bad homburg",
+  "admin": "Hesse"
+}, {
+  "city": "Bad Kissingen",
+  "city_normalized": "bad kissingen",
+  "admin": "Bavaria"
+}, {
+  "city": "Bad Kreuznach",
+  "city_normalized": "bad kreuznach",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Bad Neuenahr-Ahrweiler",
+  "city_normalized": "bad neuenahr-ahrweiler",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Bad Neustadt",
+  "city_normalized": "bad neustadt",
+  "admin": "Bavaria"
+}, {
+  "city": "Bad Oldesloe",
+  "city_normalized": "bad oldesloe",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Bad Reichenhall",
+  "city_normalized": "bad reichenhall",
+  "admin": "Bavaria"
+}, {
+  "city": "Bad Salzungen",
+  "city_normalized": "bad salzungen",
+  "admin": "Thuringia"
+}, {
+  "city": "Bad Schwalbach",
+  "city_normalized": "bad schwalbach",
+  "admin": "Hesse"
+}, {
+  "city": "Bad Segeberg",
+  "city_normalized": "bad segeberg",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Bad Tölz",
+  "city_normalized": "bad tolz",
+  "admin": "Bavaria"
+}, {
+  "city": "Baden-Baden",
+  "city_normalized": "baden-baden",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Balingen",
+  "city_normalized": "balingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Bamberg",
+  "city_normalized": "bamberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Bautzen",
+  "city_normalized": "bautzen",
+  "admin": "Saxony"
+}, {
+  "city": "Bayreuth",
+  "city_normalized": "bayreuth",
+  "admin": "Bavaria"
+}, {
+  "city": "Beeskow",
+  "city_normalized": "beeskow",
+  "admin": "Brandenburg"
+}, {
+  "city": "Bergheim",
+  "city_normalized": "bergheim",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Bergisch Gladbach",
+  "city_normalized": "bergisch gladbach",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Berlin",
+  "city_normalized": "berlin",
+  "admin": "Berlin"
+}, {
+  "city": "Bernburg",
+  "city_normalized": "bernburg",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Biberach",
+  "city_normalized": "biberach",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Bielefeld",
+  "city_normalized": "bielefeld",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Birkenfeld",
+  "city_normalized": "birkenfeld",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Bitburg",
+  "city_normalized": "bitburg",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Bochum",
+  "city_normalized": "bochum",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Bonn",
+  "city_normalized": "bonn",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Borken",
+  "city_normalized": "borken",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Bottrop",
+  "city_normalized": "bottrop",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Brake",
+  "city_normalized": "brake",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Brandenburg",
+  "city_normalized": "brandenburg",
+  "admin": "Brandenburg"
+}, {
+  "city": "Braunschweig",
+  "city_normalized": "braunschweig",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Bremen",
+  "city_normalized": "bremen",
+  "admin": "Bremen"
+}, {
+  "city": "Bremerhaven",
+  "city_normalized": "bremerhaven",
+  "admin": "Bremen"
+}, {
+  "city": "Burg",
+  "city_normalized": "burg",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Böblingen",
+  "city_normalized": "boblingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Calw",
+  "city_normalized": "calw",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Celle",
+  "city_normalized": "celle",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Cham",
+  "city_normalized": "cham",
+  "admin": "Bavaria"
+}, {
+  "city": "Chemnitz",
+  "city_normalized": "chemnitz",
+  "admin": "Saxony"
+}, {
+  "city": "Cloppenburg",
+  "city_normalized": "cloppenburg",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Coburg",
+  "city_normalized": "coburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Coburg",
+  "city_normalized": "coburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Cochem",
+  "city_normalized": "cochem",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Coesfeld",
+  "city_normalized": "coesfeld",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Cologne",
+  "city_normalized": "cologne",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Cottbus",
+  "city_normalized": "cottbus",
+  "admin": "Brandenburg"
+}, {
+  "city": "Cuxhaven",
+  "city_normalized": "cuxhaven",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Dachau",
+  "city_normalized": "dachau",
+  "admin": "Bavaria"
+}, {
+  "city": "Darmstadt",
+  "city_normalized": "darmstadt",
+  "admin": "Hesse"
+}, {
+  "city": "Daun",
+  "city_normalized": "daun",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Deggendorf",
+  "city_normalized": "deggendorf",
+  "admin": "Bavaria"
+}, {
+  "city": "Delmenhorst",
+  "city_normalized": "delmenhorst",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Dessau-Roßlau",
+  "city_normalized": "dessau-roßlau",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Detmold",
+  "city_normalized": "detmold",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Diepholz",
+  "city_normalized": "diepholz",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Dillingen",
+  "city_normalized": "dillingen",
+  "admin": "Bavaria"
+}, {
+  "city": "Dingolfing",
+  "city_normalized": "dingolfing",
+  "admin": "Bavaria"
+}, {
+  "city": "Donauwörth",
+  "city_normalized": "donauworth",
+  "admin": "Bavaria"
+}, {
+  "city": "Dortmund",
+  "city_normalized": "dortmund",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Dresden",
+  "city_normalized": "dresden",
+  "admin": "Saxony"
+}, {
+  "city": "Duisburg",
+  "city_normalized": "duisburg",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Düren",
+  "city_normalized": "duren",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Düsseldorf",
+  "city_normalized": "dusseldorf",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Ebersberg",
+  "city_normalized": "ebersberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Eberswalde",
+  "city_normalized": "eberswalde",
+  "admin": "Brandenburg"
+}, {
+  "city": "Eichstätt",
+  "city_normalized": "eichstatt",
+  "admin": "Bavaria"
+}, {
+  "city": "Eisenach",
+  "city_normalized": "eisenach",
+  "admin": "Thuringia"
+}, {
+  "city": "Eisenberg",
+  "city_normalized": "eisenberg",
+  "admin": "Thuringia"
+}, {
+  "city": "Emden",
+  "city_normalized": "emden",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Emmendingen",
+  "city_normalized": "emmendingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Erbach",
+  "city_normalized": "erbach",
+  "admin": "Hesse"
+}, {
+  "city": "Erding",
+  "city_normalized": "erding",
+  "admin": "Bavaria"
+}, {
+  "city": "Erfurt",
+  "city_normalized": "erfurt",
+  "admin": "Thuringia"
+}, {
+  "city": "Erlangen",
+  "city_normalized": "erlangen",
+  "admin": "Bavaria"
+}, {
+  "city": "Eschwege",
+  "city_normalized": "eschwege",
+  "admin": "Hesse"
+}, {
+  "city": "Essen",
+  "city_normalized": "essen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Esslingen",
+  "city_normalized": "esslingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Euskirchen",
+  "city_normalized": "euskirchen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Eutin",
+  "city_normalized": "eutin",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Flensburg",
+  "city_normalized": "flensburg",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Forchheim",
+  "city_normalized": "forchheim",
+  "admin": "Bavaria"
+}, {
+  "city": "Forst",
+  "city_normalized": "forst",
+  "admin": "Brandenburg"
+}, {
+  "city": "Frankenthal",
+  "city_normalized": "frankenthal",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Frankfurt",
+  "city_normalized": "frankfurt",
+  "admin": "Hesse"
+}, {
+  "city": "Frankfurt (Oder)",
+  "city_normalized": "frankfurt (oder)",
+  "admin": "Brandenburg"
+}, {
+  "city": "Freiberg",
+  "city_normalized": "freiberg",
+  "admin": "Saxony"
+}, {
+  "city": "Freiburg",
+  "city_normalized": "freiburg",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Freising",
+  "city_normalized": "freising",
+  "admin": "Bavaria"
+}, {
+  "city": "Freudenstadt",
+  "city_normalized": "freudenstadt",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Freyung",
+  "city_normalized": "freyung",
+  "admin": "Bavaria"
+}, {
+  "city": "Friedberg",
+  "city_normalized": "friedberg",
+  "admin": "Hesse"
+}, {
+  "city": "Fulda",
+  "city_normalized": "fulda",
+  "admin": "Hesse"
+}, {
+  "city": "Fürstenfeldbruck",
+  "city_normalized": "furstenfeldbruck",
+  "admin": "Bavaria"
+}, {
+  "city": "Fürth",
+  "city_normalized": "furth",
+  "admin": "Bavaria"
+}, {
+  "city": "Garmisch-Partenkirchen",
+  "city_normalized": "garmisch-partenkirchen",
+  "admin": "Bavaria"
+}, {
+  "city": "Gelsenkirchen",
+  "city_normalized": "gelsenkirchen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Gera",
+  "city_normalized": "gera",
+  "admin": "Thuringia"
+}, {
+  "city": "Germersheim",
+  "city_normalized": "germersheim",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Gießen",
+  "city_normalized": "gießen",
+  "admin": "Hesse"
+}, {
+  "city": "Gifhorn",
+  "city_normalized": "gifhorn",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Goslar",
+  "city_normalized": "goslar",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Gotha",
+  "city_normalized": "gotha",
+  "admin": "Thuringia"
+}, {
+  "city": "Greifswald",
+  "city_normalized": "greifswald",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Greiz",
+  "city_normalized": "greiz",
+  "admin": "Thuringia"
+}, {
+  "city": "Groß-Gerau",
+  "city_normalized": "groß-gerau",
+  "admin": "Hesse"
+}, {
+  "city": "Gummersbach",
+  "city_normalized": "gummersbach",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Göppingen",
+  "city_normalized": "goppingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Görlitz",
+  "city_normalized": "gorlitz",
+  "admin": "Saxony"
+}, {
+  "city": "Göttingen",
+  "city_normalized": "gottingen",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Günzburg",
+  "city_normalized": "gunzburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Güstrow",
+  "city_normalized": "gustrow",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Gütersloh",
+  "city_normalized": "gutersloh",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Hagen",
+  "city_normalized": "hagen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Halberstadt",
+  "city_normalized": "halberstadt",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Haldensleben",
+  "city_normalized": "haldensleben",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Halle",
+  "city_normalized": "halle",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Hamburg",
+  "city_normalized": "hamburg",
+  "admin": "Hamburg"
+}, {
+  "city": "Hameln",
+  "city_normalized": "hameln",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Hamm",
+  "city_normalized": "hamm",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Hanau",
+  "city_normalized": "hanau",
+  "admin": "Hesse"
+}, {
+  "city": "Hannover",
+  "city_normalized": "hannover",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Haßfurt",
+  "city_normalized": "haßfurt",
+  "admin": "Bavaria"
+}, {
+  "city": "Heide",
+  "city_normalized": "heide",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Heidelberg",
+  "city_normalized": "heidelberg",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Heidenheim",
+  "city_normalized": "heidenheim",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Heilbad Heiligenstadt",
+  "city_normalized": "heilbad heiligenstadt",
+  "admin": "Thuringia"
+}, {
+  "city": "Heilbronn",
+  "city_normalized": "heilbronn",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Heinsberg",
+  "city_normalized": "heinsberg",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Helmstedt",
+  "city_normalized": "helmstedt",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Heppenheim",
+  "city_normalized": "heppenheim",
+  "admin": "Hesse"
+}, {
+  "city": "Herford",
+  "city_normalized": "herford",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Herne",
+  "city_normalized": "herne",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Herzberg",
+  "city_normalized": "herzberg",
+  "admin": "Brandenburg"
+}, {
+  "city": "Hildburghausen",
+  "city_normalized": "hildburghausen",
+  "admin": "Thuringia"
+}, {
+  "city": "Hildesheim",
+  "city_normalized": "hildesheim",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Hof",
+  "city_normalized": "hof",
+  "admin": "Bavaria"
+}, {
+  "city": "Hofeck",
+  "city_normalized": "hofeck",
+  "admin": "Bavaria"
+}, {
+  "city": "Hofheim",
+  "city_normalized": "hofheim",
+  "admin": "Hesse"
+}, {
+  "city": "Holzminden",
+  "city_normalized": "holzminden",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Homberg",
+  "city_normalized": "homberg",
+  "admin": "Hesse"
+}, {
+  "city": "Homburg",
+  "city_normalized": "homburg",
+  "admin": "Saarland"
+}, {
+  "city": "Husum",
+  "city_normalized": "husum",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Höxter",
+  "city_normalized": "hoxter",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Ingelheim",
+  "city_normalized": "ingelheim",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Ingolstadt",
+  "city_normalized": "ingolstadt",
+  "admin": "Bavaria"
+}, {
+  "city": "Itzehoe",
+  "city_normalized": "itzehoe",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Jena",
+  "city_normalized": "jena",
+  "admin": "Thuringia"
+}, {
+  "city": "Jever",
+  "city_normalized": "jever",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Kaiserslautern",
+  "city_normalized": "kaiserslautern",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Karlsruhe",
+  "city_normalized": "karlsruhe",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Karlstadt",
+  "city_normalized": "karlstadt",
+  "admin": "Bavaria"
+}, {
+  "city": "Kassel",
+  "city_normalized": "kassel",
+  "admin": "Hesse"
+}, {
+  "city": "Kaufbeuren",
+  "city_normalized": "kaufbeuren",
+  "admin": "Bavaria"
+}, {
+  "city": "Kelheim",
+  "city_normalized": "kelheim",
+  "admin": "Bavaria"
+}, {
+  "city": "Kempten",
+  "city_normalized": "kempten",
+  "admin": "Bavaria"
+}, {
+  "city": "Kiel",
+  "city_normalized": "kiel",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Kirchheimbolanden",
+  "city_normalized": "kirchheimbolanden",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Kitzingen",
+  "city_normalized": "kitzingen",
+  "admin": "Bavaria"
+}, {
+  "city": "Kleve",
+  "city_normalized": "kleve",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Koblenz",
+  "city_normalized": "koblenz",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Korbach",
+  "city_normalized": "korbach",
+  "admin": "Hesse"
+}, {
+  "city": "Krefeld",
+  "city_normalized": "krefeld",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Kronach",
+  "city_normalized": "kronach",
+  "admin": "Bavaria"
+}, {
+  "city": "Kulmbach",
+  "city_normalized": "kulmbach",
+  "admin": "Bavaria"
+}, {
+  "city": "Kusel",
+  "city_normalized": "kusel",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Köthen",
+  "city_normalized": "kothen",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Künzelsau",
+  "city_normalized": "kunzelsau",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Landau",
+  "city_normalized": "landau",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Landsberg",
+  "city_normalized": "landsberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Landshut",
+  "city_normalized": "landshut",
+  "admin": "Bavaria"
+}, {
+  "city": "Lauf",
+  "city_normalized": "lauf",
+  "admin": "Bavaria"
+}, {
+  "city": "Lauterbach",
+  "city_normalized": "lauterbach",
+  "admin": "Hesse"
+}, {
+  "city": "Leer",
+  "city_normalized": "leer",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Leipzig",
+  "city_normalized": "leipzig",
+  "admin": "Saxony"
+}, {
+  "city": "Leverkusen",
+  "city_normalized": "leverkusen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Lichtenfels",
+  "city_normalized": "lichtenfels",
+  "admin": "Bavaria"
+}, {
+  "city": "Limburg",
+  "city_normalized": "limburg",
+  "admin": "Hesse"
+}, {
+  "city": "Luckenwalde",
+  "city_normalized": "luckenwalde",
+  "admin": "Brandenburg"
+}, {
+  "city": "Ludwigsburg",
+  "city_normalized": "ludwigsburg",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Ludwigshafen",
+  "city_normalized": "ludwigshafen",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Lörrach",
+  "city_normalized": "lorrach",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Lübben",
+  "city_normalized": "lubben",
+  "admin": "Brandenburg"
+}, {
+  "city": "Lübeck",
+  "city_normalized": "lubeck",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Lüchow",
+  "city_normalized": "luchow",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Lüdenscheid",
+  "city_normalized": "ludenscheid",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Lüneburg",
+  "city_normalized": "luneburg",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Magdeburg",
+  "city_normalized": "magdeburg",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Mainz",
+  "city_normalized": "mainz",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Mannheim",
+  "city_normalized": "mannheim",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Marburg",
+  "city_normalized": "marburg",
+  "admin": "Hesse"
+}, {
+  "city": "Marienberg",
+  "city_normalized": "marienberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Marktoberdorf",
+  "city_normalized": "marktoberdorf",
+  "admin": "Bavaria"
+}, {
+  "city": "Meiningen",
+  "city_normalized": "meiningen",
+  "admin": "Thuringia"
+}, {
+  "city": "Meißen",
+  "city_normalized": "meißen",
+  "admin": "Saxony"
+}, {
+  "city": "Memmingen",
+  "city_normalized": "memmingen",
+  "admin": "Bavaria"
+}, {
+  "city": "Meppen",
+  "city_normalized": "meppen",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Merseburg",
+  "city_normalized": "merseburg",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Merzig",
+  "city_normalized": "merzig",
+  "admin": "Saarland"
+}, {
+  "city": "Meschede",
+  "city_normalized": "meschede",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Mettmann",
+  "city_normalized": "mettmann",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Miesbach",
+  "city_normalized": "miesbach",
+  "admin": "Bavaria"
+}, {
+  "city": "Miltenberg",
+  "city_normalized": "miltenberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Mindelheim",
+  "city_normalized": "mindelheim",
+  "admin": "Bavaria"
+}, {
+  "city": "Minden",
+  "city_normalized": "minden",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Montabaur",
+  "city_normalized": "montabaur",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Mosbach",
+  "city_normalized": "mosbach",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Munich",
+  "city_normalized": "munich",
+  "admin": "Bavaria"
+}, {
+  "city": "Mönchengladbach",
+  "city_normalized": "monchengladbach",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Mühldorf",
+  "city_normalized": "muhldorf",
+  "admin": "Bavaria"
+}, {
+  "city": "Mühlhausen",
+  "city_normalized": "muhlhausen",
+  "admin": "Thuringia"
+}, {
+  "city": "Mülheim",
+  "city_normalized": "mulheim",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Münster",
+  "city_normalized": "munster",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Naumburg",
+  "city_normalized": "naumburg",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Neu-Ulm",
+  "city_normalized": "neu-ulm",
+  "admin": "Bavaria"
+}, {
+  "city": "Neubrandenburg",
+  "city_normalized": "neubrandenburg",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Neuburg",
+  "city_normalized": "neuburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Neumarkt",
+  "city_normalized": "neumarkt",
+  "admin": "Bavaria"
+}, {
+  "city": "Neumünster",
+  "city_normalized": "neumunster",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Neunkirchen",
+  "city_normalized": "neunkirchen",
+  "admin": "Saarland"
+}, {
+  "city": "Neuruppin",
+  "city_normalized": "neuruppin",
+  "admin": "Brandenburg"
+}, {
+  "city": "Neuss",
+  "city_normalized": "neuss",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Neustadt",
+  "city_normalized": "neustadt",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Neustadt",
+  "city_normalized": "neustadt",
+  "admin": "Bavaria"
+}, {
+  "city": "Neustadt",
+  "city_normalized": "neustadt",
+  "admin": "Bavaria"
+}, {
+  "city": "Neustadt",
+  "city_normalized": "neustadt",
+  "admin": "Hesse"
+}, {
+  "city": "Neuwied",
+  "city_normalized": "neuwied",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Nienburg",
+  "city_normalized": "nienburg",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Nordhausen",
+  "city_normalized": "nordhausen",
+  "admin": "Thuringia"
+}, {
+  "city": "Nordhorn",
+  "city_normalized": "nordhorn",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Northeim",
+  "city_normalized": "northeim",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Nuremberg",
+  "city_normalized": "nuremberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Oberhausen",
+  "city_normalized": "oberhausen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Offenbach",
+  "city_normalized": "offenbach",
+  "admin": "Hesse"
+}, {
+  "city": "Offenburg",
+  "city_normalized": "offenburg",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Oldenburg",
+  "city_normalized": "oldenburg",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Olpe",
+  "city_normalized": "olpe",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Oranienburg",
+  "city_normalized": "oranienburg",
+  "admin": "Brandenburg"
+}, {
+  "city": "Osnabrück",
+  "city_normalized": "osnabruck",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Osterholz-Scharmbeck",
+  "city_normalized": "osterholz-scharmbeck",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Osterode",
+  "city_normalized": "osterode",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Paderborn",
+  "city_normalized": "paderborn",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Parchim",
+  "city_normalized": "parchim",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Passau",
+  "city_normalized": "passau",
+  "admin": "Bavaria"
+}, {
+  "city": "Peine",
+  "city_normalized": "peine",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Perleberg",
+  "city_normalized": "perleberg",
+  "admin": "Brandenburg"
+}, {
+  "city": "Pfaffenhofen",
+  "city_normalized": "pfaffenhofen",
+  "admin": "Bavaria"
+}, {
+  "city": "Pfarrkirchen",
+  "city_normalized": "pfarrkirchen",
+  "admin": "Bavaria"
+}, {
+  "city": "Pforzheim",
+  "city_normalized": "pforzheim",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Pinneberg",
+  "city_normalized": "pinneberg",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Pirmasens",
+  "city_normalized": "pirmasens",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Pirna",
+  "city_normalized": "pirna",
+  "admin": "Saxony"
+}, {
+  "city": "Plauen",
+  "city_normalized": "plauen",
+  "admin": "Saxony"
+}, {
+  "city": "Plön",
+  "city_normalized": "plon",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Potsdam",
+  "city_normalized": "potsdam",
+  "admin": "Brandenburg"
+}, {
+  "city": "Prenzlau",
+  "city_normalized": "prenzlau",
+  "admin": "Brandenburg"
+}, {
+  "city": "Rastatt",
+  "city_normalized": "rastatt",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Rathenow",
+  "city_normalized": "rathenow",
+  "admin": "Brandenburg"
+}, {
+  "city": "Ratzeburg",
+  "city_normalized": "ratzeburg",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Ravensburg",
+  "city_normalized": "ravensburg",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Recklinghausen",
+  "city_normalized": "recklinghausen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Regen",
+  "city_normalized": "regen",
+  "admin": "Bavaria"
+}, {
+  "city": "Regensburg",
+  "city_normalized": "regensburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Remscheid",
+  "city_normalized": "remscheid",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Rendsburg",
+  "city_normalized": "rendsburg",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Reutlingen",
+  "city_normalized": "reutlingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Rosenheim",
+  "city_normalized": "rosenheim",
+  "admin": "Bavaria"
+}, {
+  "city": "Rostock",
+  "city_normalized": "rostock",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Rotenburg",
+  "city_normalized": "rotenburg",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Rottweil",
+  "city_normalized": "rottweil",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Saalfeld",
+  "city_normalized": "saalfeld",
+  "admin": "Thuringia"
+}, {
+  "city": "Saarbrücken",
+  "city_normalized": "saarbrucken",
+  "admin": "Saarland"
+}, {
+  "city": "Saarlouis",
+  "city_normalized": "saarlouis",
+  "admin": "Saarland"
+}, {
+  "city": "Salzgitter",
+  "city_normalized": "salzgitter",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Salzwedel",
+  "city_normalized": "salzwedel",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Sangerhausen",
+  "city_normalized": "sangerhausen",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Sankt Wendel",
+  "city_normalized": "sankt wendel",
+  "admin": "Saarland"
+}, {
+  "city": "Schleiz",
+  "city_normalized": "schleiz",
+  "admin": "Thuringia"
+}, {
+  "city": "Schleswig",
+  "city_normalized": "schleswig",
+  "admin": "Schleswig-Holstein"
+}, {
+  "city": "Schwabach",
+  "city_normalized": "schwabach",
+  "admin": "Bavaria"
+}, {
+  "city": "Schwandorf",
+  "city_normalized": "schwandorf",
+  "admin": "Bavaria"
+}, {
+  "city": "Schwelm",
+  "city_normalized": "schwelm",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Schwerin",
+  "city_normalized": "schwerin",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Schwäbisch Hall",
+  "city_normalized": "schwabisch hall",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Seelow",
+  "city_normalized": "seelow",
+  "admin": "Brandenburg"
+}, {
+  "city": "Senftenberg",
+  "city_normalized": "senftenberg",
+  "admin": "Brandenburg"
+}, {
+  "city": "Siegburg",
+  "city_normalized": "siegburg",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Siegen",
+  "city_normalized": "siegen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Sigmaringen",
+  "city_normalized": "sigmaringen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Simmern",
+  "city_normalized": "simmern",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Soest",
+  "city_normalized": "soest",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Solingen",
+  "city_normalized": "solingen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Sondershausen",
+  "city_normalized": "sondershausen",
+  "admin": "Thuringia"
+}, {
+  "city": "Sonneberg",
+  "city_normalized": "sonneberg",
+  "admin": "Thuringia"
+}, {
+  "city": "Sonthofen",
+  "city_normalized": "sonthofen",
+  "admin": "Bavaria"
+}, {
+  "city": "Speyer",
+  "city_normalized": "speyer",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Stade",
+  "city_normalized": "stade",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Stadthagen",
+  "city_normalized": "stadthagen",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Starnberg",
+  "city_normalized": "starnberg",
+  "admin": "Bavaria"
+}, {
+  "city": "Steinfurt",
+  "city_normalized": "steinfurt",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Stendal",
+  "city_normalized": "stendal",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Stralsund",
+  "city_normalized": "stralsund",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Straubing",
+  "city_normalized": "straubing",
+  "admin": "Bavaria"
+}, {
+  "city": "Stuttgart",
+  "city_normalized": "stuttgart",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Suhl",
+  "city_normalized": "suhl",
+  "admin": "Thuringia"
+}, {
+  "city": "Sömmerda",
+  "city_normalized": "sommerda",
+  "admin": "Thuringia"
+}, {
+  "city": "Tauberbischofsheim",
+  "city_normalized": "tauberbischofsheim",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Tirschenreuth",
+  "city_normalized": "tirschenreuth",
+  "admin": "Bavaria"
+}, {
+  "city": "Torgau",
+  "city_normalized": "torgau",
+  "admin": "Saxony"
+}, {
+  "city": "Traunstein",
+  "city_normalized": "traunstein",
+  "admin": "Bavaria"
+}, {
+  "city": "Trier",
+  "city_normalized": "trier",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Tuttlingen",
+  "city_normalized": "tuttlingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Tübingen",
+  "city_normalized": "tubingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Uelzen",
+  "city_normalized": "uelzen",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Ulm",
+  "city_normalized": "ulm",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Unna",
+  "city_normalized": "unna",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Vechta",
+  "city_normalized": "vechta",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Verden",
+  "city_normalized": "verden",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Viersen",
+  "city_normalized": "viersen",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Villingen-Schwenningen",
+  "city_normalized": "villingen-schwenningen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Waiblingen",
+  "city_normalized": "waiblingen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Waldshut-Tiengen",
+  "city_normalized": "waldshut-tiengen",
+  "admin": "Baden-Württemberg"
+}, {
+  "city": "Warendorf",
+  "city_normalized": "warendorf",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Weiden",
+  "city_normalized": "weiden",
+  "admin": "Bavaria"
+}, {
+  "city": "Weilheim",
+  "city_normalized": "weilheim",
+  "admin": "Bavaria"
+}, {
+  "city": "Weimar",
+  "city_normalized": "weimar",
+  "admin": "Thuringia"
+}, {
+  "city": "Weißenburg",
+  "city_normalized": "weißenburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Wesel",
+  "city_normalized": "wesel",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Westerstede",
+  "city_normalized": "westerstede",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Wetzlar",
+  "city_normalized": "wetzlar",
+  "admin": "Hesse"
+}, {
+  "city": "Wiesbaden",
+  "city_normalized": "wiesbaden",
+  "admin": "Hesse"
+}, {
+  "city": "Wilhelmshaven",
+  "city_normalized": "wilhelmshaven",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Winsen",
+  "city_normalized": "winsen",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Wismar",
+  "city_normalized": "wismar",
+  "admin": "Mecklenburg-Western Pomerania"
+}, {
+  "city": "Wittenberg",
+  "city_normalized": "wittenberg",
+  "admin": "Saxony-Anhalt"
+}, {
+  "city": "Wittlich",
+  "city_normalized": "wittlich",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Wittmund",
+  "city_normalized": "wittmund",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Wolfenbüttel",
+  "city_normalized": "wolfenbuttel",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Wolfsburg",
+  "city_normalized": "wolfsburg",
+  "admin": "Lower Saxony"
+}, {
+  "city": "Worms",
+  "city_normalized": "worms",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Wunsiedel",
+  "city_normalized": "wunsiedel",
+  "admin": "Bavaria"
+}, {
+  "city": "Wuppertal",
+  "city_normalized": "wuppertal",
+  "admin": "North Rhine-Westphalia"
+}, {
+  "city": "Würzburg",
+  "city_normalized": "wurzburg",
+  "admin": "Bavaria"
+}, {
+  "city": "Zweibrücken",
+  "city_normalized": "zweibrucken",
+  "admin": "Rhineland-Palatinate"
+}, {
+  "city": "Zwickau",
+  "city_normalized": "zwickau",
+  "admin": "Saxony"
+}]

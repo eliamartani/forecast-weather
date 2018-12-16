@@ -28,7 +28,6 @@ import { removeDiacritics } from '../mixins/string'
 import { serverBus } from '../store'
 
 export default {
-  name: 'TheSearch',
   data () {
     return {
       city: '',

@@ -1,4 +1,4 @@
-﻿using ForecastWeather.Core.Exceptions;
+using ForecastWeather.Core.Exceptions;
 using ForecastWeather.Core.Models;
 using Xunit;
 
@@ -14,9 +14,9 @@ namespace ForecastWeather.Tests.Unit.Core.Models
                 City = "Leipzig"
             };
 
-            Assert.Equal($"q=Leipzig,", city.GetQuery());
-            Assert.Equal($"q=Leipzig,de", city.GetQuery("de"));
-            Assert.Equal($"q=Leipzig,us", city.GetQuery("us"));
+            Assert.Equal($"q=Leipzig%2c", city.GetQuery());
+            Assert.Equal($"q=Leipzig%2cde", city.GetQuery("de"));
+            Assert.Equal($"q=Leipzig%2cus", city.GetQuery("us"));
         }
 
         [Fact]
@@ -28,8 +28,8 @@ namespace ForecastWeather.Tests.Unit.Core.Models
                 CountryCode = "de"
             };
 
-            Assert.Equal($"q=Leipzig,de", city.GetQuery());
-            Assert.Equal($"q=Leipzig,de", city.GetQuery("us"));
+            Assert.Equal($"q=Leipzig%2cde", city.GetQuery());
+            Assert.Equal($"q=Leipzig%2cde", city.GetQuery("us"));
         }
 
         [Fact]
@@ -40,9 +40,9 @@ namespace ForecastWeather.Tests.Unit.Core.Models
                 ZipCode = "04109"
             };
 
-            Assert.Equal($"zip=04109,", city.GetQuery());
-            Assert.Equal($"zip=04109,de", city.GetQuery("de"));
-            Assert.Equal($"zip=04109,us", city.GetQuery("us"));
+            Assert.Equal($"zip=04109%2c", city.GetQuery());
+            Assert.Equal($"zip=04109%2cde", city.GetQuery("de"));
+            Assert.Equal($"zip=04109%2cus", city.GetQuery("us"));
         }
 
         [Fact]
@@ -54,8 +54,8 @@ namespace ForecastWeather.Tests.Unit.Core.Models
                 ZipCode = "04109"
             };
 
-            Assert.Equal($"zip=04109,de", city.GetQuery());
-            Assert.Equal($"zip=04109,de", city.GetQuery("us"));
+            Assert.Equal($"zip=04109%2cde", city.GetQuery());
+            Assert.Equal($"zip=04109%2cde", city.GetQuery("us"));
         }
 
         [Fact]

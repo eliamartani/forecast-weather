@@ -15,7 +15,7 @@
           <ul>
             <li>- This site uses <strong>metric unit</strong></li>
             <li>- Autocomplete field shows only <strong>german cities</strong>. However you can search for any city in the world by adding comma and the country you want. <i>e.g. "lisbon,pt"</i></li>
-            <li>- The result is composed by <strong>Time</strong>, <strong>Humidity</strong>, <strong>Temperature</strong> and <strong>Windspeed</strong> </li>
+            <li>- The result is composed by <strong>Humidity</strong>, <strong>Temperature</strong> and <strong>Windspeed</strong> </li>
             <li>- <strong>MomentJs</strong> considers your current language for some fields</li>
           </ul>
         </div>

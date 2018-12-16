@@ -2,6 +2,7 @@
 using ForecastWeather.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace ForecastWeather.WebApi.Controllers
 {
@@ -28,20 +29,12 @@ namespace ForecastWeather.WebApi.Controllers
         /// <param name="city">City name</param>
         /// <param name="countryCode">(Optional) Country code composed by 2 letters</param>
         /// <param name="zipCode">Postal code</param>
-        /// <returns>WeatherResult representation</returns>
+        /// <returns>WeatherResultByDay representation</returns>
         [HttpGet]
-        public async Task<ObjectResult> Forecast(
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<WeatherResultByDay> Forecast(
             string city = null,
             string countryCode = null,
-            string zipCode = null) => Ok(new DataResult
-            {
-                Message = "Data retrieved with success",
-                Data = await _weatherClient.GetData(new Filter
-                {
-                    City = city,
-                    CountryCode = countryCode,
-                    ZipCode = zipCode
-                })
-            });
+            string zipCode = null) => await _weatherClient.GetData(new Filter(city, countryCode, zipCode));
     }
 }

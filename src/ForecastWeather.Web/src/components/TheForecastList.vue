@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-loading :is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
-    <div class="forecast" v-if="!isLoading && result">
+    <div class="forecast" v-if="!isLoading && result && result.city">
       <div class="columns">
         <div class="column is-block-tablet is-block-mobile is-half-tablet-only is-3-desktop">
           <iframe
@@ -22,7 +22,7 @@
                     &nbsp;{{ result ? `${ result.city.name }, ${ result.city.country }` : '' }}
                   </h4>
                   <p class="day-week">
-                    <img v-bind:src="[urlIcon + tomorrow.list[0].icon + '.png']" class="img-weather" alt="">
+                    <img v-bind:src="[urlIcon + tomorrow.forecast.icon + '.png']" class="img-weather" alt="">
                   </p>
                   <p>
                     <span class="day-week">{{ moment(tomorrow.date).format('dddd') }}</span>
@@ -31,24 +31,9 @@
                     </span>
                   </p>
                 </div>
-                <div class="column">
+                <div class="column column-middle">
                   <div class="table-days">
-                    <div v-for="(weather, indexTime) in tomorrow.list" :key="indexTime">
-                      <div class="columns info-text is-mobile">
-                        <div class="column time">
-                          {{ moment(weather.date).format('LT') }}
-                        </div>
-                        <div class="column">
-                          {{ weather.humidity }}%
-                        </div>
-                        <div class="column">
-                          {{ weather.temp }}&ordm;C
-                        </div>
-                        <div class="column">
-                          {{ weather.speed }} m/s
-                        </div>
-                      </div>
-                    </div>
+                    <TheWeather :forecast=tomorrow.forecast />
                   </div>
                 </div>
               </div>
@@ -56,71 +41,51 @@
           </template>
         </div>
       </div>
-      <h3 class="subtitle menu-weather">
-        <a href="javascript:;" v-bind:class="{ 'is-active': isForecastSelected }" v-on:click="isForecastSelected = true">5 days weather forecast</a>&nbsp;|&nbsp;
-        <a href="javascript:;" v-bind:class="{ 'is-active': !isForecastSelected }" v-on:click="isForecastSelected = false">History</a>
-      </h3>
-      <div v-if="isForecastSelected" class="columns other-days is-desktop">
-        <div class="column" v-for="(item, indexDay) in nextDays" v-bind:key="indexDay">
-          <div class="box">
-            <p>
-              <span class="day-week">
-                <img v-bind:src="[urlIcon + item.list[0].icon + '.png']" class="img-weather" alt="">
-                <br>
-                {{ moment(item.date).format('dddd') }}</span>
-              <span class="day">
-                {{ moment(item.date).format('Do') }}
-                <span class="month">{{ moment(item.date).format('MMM') }}</span>
-              </span>
-            </p>
-            <div class="table-days">
-              <div v-for="(weather, indexTime) in item.list" :key="indexTime">
-                <div class="columns info-text is-mobile">
-                  <div class="column time">
-                    {{ moment(weather.date).format('LT') }}
-                  </div>
-                  <div class="column">
-                    {{ weather.humidity }}%
-                  </div>
-                  <div class="column">
-                    {{ weather.temp }}&ordm;C
-                  </div>
-                  <div class="column">
-                    {{ weather.speed }} m/s
+      <section>
+        <b-tabs position="is-centered" type="is-toggle-rounded" class="block">
+          <b-tab-item label="Next 5 days">
+            <div class="columns other-days is-desktop">
+              <div class="column" v-for="(item, indexDay) in nextDays" v-bind:key="indexDay">
+                <div class="box">
+                  <p>
+                    <span class="day-week">
+                      <img v-bind:src="[urlIcon + item.forecast.icon + '.png']" class="img-weather" alt="">
+                      <br>
+                      {{ moment(item.date).format('dddd') }}</span>
+                    <span class="day">
+                      {{ moment(item.date).format('Do') }}
+                      <span class="month">{{ moment(item.date).format('MMM') }}</span>
+                    </span>
+                  </p>
+                  <div class="table-days">
+                    <TheWeather :forecast=item.forecast />
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div v-else class="columns is-history-list">
-        <div class="column" v-for="(historyItem, index) in resultHistory" :key="index">
-          <div class="box">
-            <span class="day-week">
-              <img v-bind:src="[urlIcon + historyItem.icon + '.png']" class="img-weather" alt="">
-              <br>
-              {{ historyItem.date }}
-            </span>
-            <div class="columns info-text is-mobile">
-              <div class="column">
-                {{ historyItem.humidity }}%
-              </div>
-              <div class="column">
-                {{ historyItem.temp }}&ordm;C
-              </div>
-              <div class="column">
-                {{ historyItem.speed }} m/s
+          </b-tab-item>
+          <b-tab-item label="History">
+            <div class="columns is-history-list">
+              <div class="column" v-for="(historyItem, index) in resultHistory" :key="index">
+                <div class="box">
+                  <span class="day-week">
+                    <img v-bind:src="[urlIcon + historyItem.icon + '.png']" class="img-weather" alt="">
+                    <br>
+                    {{ historyItem.date }}
+                  </span>
+                  <TheWeather :forecast=historyItem />
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </b-tab-item>
+        </b-tabs>
+      </section>
     </div>
   </div>
 </template>
 
 <script>
+import TheWeather from './TheWeather'
 import api from '../data/api.json'
 import axios from 'axios'
 import moment from 'moment'
@@ -129,16 +94,23 @@ import {
 } from '../store'
 import 'flag-icon-css/css/flag-icon.min.css'
 
+const defaultSettings = {
+  duration: 5000,
+  position: 'is-bottom'
+}
+
 export default {
   data () {
     return {
-      isForecastSelected: true,
       isLoading: false,
       result: null,
       resultHistory: null,
       searchValue: '',
       urlIcon: api.urlIcon
     }
+  },
+  components: {
+    TheWeather
   },
   created () {
     // receives value when event $emit is triggered
@@ -155,15 +127,24 @@ export default {
         .then(response => {
           this.isLoading = false
 
-          if (response.status === 200) {
-            this.result = response.data.data
+          if (response.status !== 200) {
+            this.warning('Unexpected error')
+            return
+          }
 
-            if (this.result) {
-              this.processToday()
-            }
+          if (response.data.hasOwnProperty('Message')) {
+            // clean what was defined
+            this.result = null
+
+            this.warning(response.data.Message)
+          } else {
+            this.result = response.data
+
+            this.processToday()
           }
         })
         .catch(error => {
+          this.result = null
           this.isLoading = false
           this.error(error)
         })
@@ -189,17 +170,14 @@ export default {
         message = data
       }
 
-      this.$toast.open({
-        duration: 5000,
-        message,
-        position: 'is-bottom',
-        type: 'is-danger'
-      })
+      this.danger(message)
     },
     moment (value) {
       return moment(value)
     },
     processToday () {
+      if (!this.result && !this.result.city) return
+
       const storeKey = this.result.city.name + this.result.city.country
       const today = moment(this.result.today.date).format('L')
       const weatherKey = 'weather'
@@ -227,6 +205,24 @@ export default {
 
       // shows history list from user
       this.resultHistory = store.list
+    },
+    danger (message) {
+      this.$toast.open({
+        ...defaultSettings,
+        ...{
+          message,
+          type: 'is-danger'
+        }
+      })
+    },
+    warning (message) {
+      this.$toast.open({
+        ...defaultSettings,
+        ...{
+          message,
+          type: 'is-warning'
+        }
+      })
     }
   }
 }
@@ -258,13 +254,6 @@ export default {
     .day, .day-week {
       text-align: center;
     }
-    .is-tomorrow, .is-today {
-      @media screen and (min-width: 1088px) {
-        .day, .day-week {
-          text-align: left;
-        }
-      }
-    }
     .other-days {
       @media screen and (min-width: 1088px) and (max-width: 1279px) {
         .box {
@@ -273,10 +262,6 @@ export default {
       }
     }
     .table-days {
-      .time {
-        color: hsl(171, 100%, 41%);
-        font-weight: bold;
-      }
       .info-text {
         font-size: 14px;
       }
@@ -286,24 +271,30 @@ export default {
       height: 40px;
       margin-bottom: -10px;
     }
-    .menu-weather {
+    .column {
       text-align: center;
-      a {
-        @link: hsl(348, 100%, 61%);
-        color: @link;
-        transition: color 0.2s;
-        &:hover {
-          color: lighten(@link, 10%);
-        }
-        &.is-active {
-          text-decoration: underline;
+      .img-icon-weather {
+        & + span {
+          display: block;
         }
       }
     }
-    .is-history-list {
+    .column-middle {
+      align-self: center;
+    }
+    .other-days, .is-history-list {
       flex-wrap: wrap;
-      .column {
+      & > .column {
         flex: 1 0 25%;
+        flex-grow: 0;
+      }
+    }
+    .tabs.is-toggle {
+      .is-active {
+        a {
+          background-color: #66c2d0;
+          border-color: #66c2d0;
+        }
       }
     }
   }

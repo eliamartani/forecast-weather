@@ -9,6 +9,15 @@ namespace ForecastWeather.Core.Models
         public string CountryCode { get; set; }
         public string ZipCode { get; set; }
 
+        public Filter() { }
+
+        public Filter(string city, string countryCode, string zipCode)
+        {
+            City = city;
+            CountryCode = countryCode;
+            ZipCode = zipCode;
+        }
+
         public string GetQuery(string countryCode = null)
         {
             if (string.IsNullOrWhiteSpace(City) && string.IsNullOrWhiteSpace(ZipCode))
@@ -30,7 +39,7 @@ namespace ForecastWeather.Core.Models
             {
                 country = string.Empty;
             }
-            
+
             return $"{ queryBy }={ HttpUtility.UrlEncode($"{ value }{ country }") }";
         }
     }

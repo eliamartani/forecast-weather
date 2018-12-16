@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json.Serialization;
 
 namespace ForecastWeather.WebApi
 {
@@ -21,13 +22,17 @@ namespace ForecastWeather.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // Cache
             services.AddResponseCaching();
 
             // CORS
             services.AddCors(opt => opt.AddPolicy("ApiPolicyCors", builder => builder.AllowAnyOrigin()));
+
+            // HTTP Client exclusively for "ForecastWebApi"
+            services.AddHttpClient("ForecastWebApi");
 
             // Dependency Injection
             services.AddScoped(typeof(IWeatherClient), typeof(WeatherClient));

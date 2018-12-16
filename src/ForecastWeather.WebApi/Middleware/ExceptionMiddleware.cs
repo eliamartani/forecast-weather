@@ -2,6 +2,7 @@ using System;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using ForecastWeather.Core.Helpers;
 using ForecastWeather.Core.Models;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
@@ -35,14 +36,14 @@ namespace ForecastWeather.WebApi.Middleware
             }
         }
 
-        private async Task HandleExceptionAsync(HttpContext context, string message, int? errorCode = null)
+        private async Task HandleExceptionAsync(HttpContext context, string message, int errorCode = (int)HttpStatusCode.InternalServerError)
         {
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = errorCode.GetValueOrDefault((int)HttpStatusCode.InternalServerError);
+            context.Response.StatusCode = errorCode;
 
-            await context.Response.WriteAsync(ToJson(message));
+            await context.Response.WriteAsync(
+                JsonConvert.SerializeObject(new DataResult(message, null))
+            );
         }
-
-        private string ToJson(string message) => JsonConvert.SerializeObject(new DataResult(message, null));
     }
 }

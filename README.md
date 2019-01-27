@@ -8,7 +8,7 @@ v0.0.1 - alpha version
 
 - .NET Core 2.1
 - Visual Studio Code
-- VueJs 3 or above. If not: `npm install -g @vue/cli`
+- VueJs 2 with CLI. If not: `npm install -g @vue/cli`
 
 ## Installation
 

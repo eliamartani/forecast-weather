@@ -16,31 +16,24 @@ namespace ForecastWeather.Core.Models
             City = city;
             CountryCode = countryCode;
             ZipCode = zipCode;
-        }
 
-        public string GetQuery(string countryCode = null)
-        {
             if (string.IsNullOrWhiteSpace(City) && string.IsNullOrWhiteSpace(ZipCode))
             {
                 throw new NoEntryProvidedException();
             }
+        }
 
+        public string GetQuery(string countryCode = null)
+        {
+            bool hasZipCode = !string.IsNullOrWhiteSpace(ZipCode);
             string country = string.Concat(",", CountryCode ?? countryCode); // Priority order
-            string queryBy = "q";
-            string value = City;
+            string queryBy = hasZipCode ? "zip" : "q";
+            string value = hasZipCode ? ZipCode : City;
+            string queryCountry = value.EndsWith(country) ? string.Empty : country;
+            string queryValue = $"{ value }{ queryCountry }";
+            string query = $"{ queryBy }={ HttpUtility.UrlEncode(queryValue) }";
 
-            if (!string.IsNullOrWhiteSpace(ZipCode))
-            {
-                queryBy = "zip";
-                value = ZipCode;
-            }
-
-            if (value.EndsWith(country))
-            {
-                country = string.Empty;
-            }
-
-            return $"{ queryBy }={ HttpUtility.UrlEncode($"{ value }{ country }") }";
+            return query;
         }
     }
 }

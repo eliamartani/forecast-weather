@@ -10,10 +10,12 @@ namespace ForecastWeather.Core.Factory
             var country = configuration.GetSection("OpenWeatherMap:Country")?.Value ?? "";
             var key = configuration.GetSection("OpenWeatherMap:AppId")?.Value ?? "";
             var units = configuration.GetSection("OpenWeatherMap:Units")?.Value ?? "metric";
-            var query = filter.GetQuery(country);
+            var urlCurrent = configuration.GetSection("OpenWeatherMap:UrlCurrent")?.Value ?? "";
+            var urlForecast = configuration.GetSection("OpenWeatherMap:UrlForecast")?.Value ?? "";
 
-            var weather = string.Format(configuration.GetSection("OpenWeatherMap:UrlCurrent")?.Value ?? "", query, key, units);
-            var forecast = string.Format(configuration.GetSection("OpenWeatherMap:UrlForecast")?.Value ?? "", query, key, units);
+            var query = filter.GetQuery(country);
+            var forecast = string.Format(urlForecast, query, key, units);
+            var weather = string.Format(urlCurrent, query, key, units);
 
             return new Endpoint(forecast, weather);
         }

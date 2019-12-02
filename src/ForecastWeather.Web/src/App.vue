@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="hero is-fullheight">
+  <div
+    id="app"
+    class="hero is-fullheight"
+  >
     <Header />
     <router-view />
     <Footer />
@@ -7,13 +10,10 @@
 </template>
 
 <script>
-import Header from '@/components/HeaderCard'
-import Footer from '@/components/FooterCard'
-
 export default {
   components: {
-    Header,
-    Footer
+    Header: () => import('@/components/HeaderCard'),
+    Footer: () => import('@/components/FooterCard')
   }
 }
 </script>

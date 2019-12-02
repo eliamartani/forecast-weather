@@ -59,7 +59,8 @@ namespace ForecastWeather.Tests.Unit.Core.Models
         }
 
         [Fact]
-        public void ValidatesException() =>
+        public void ValidatesException()
+        {
             // Occurrs when city neither zipcode is provided
             Assert.Throws<NoEntryProvidedException>(() =>
             {
@@ -67,5 +68,6 @@ namespace ForecastWeather.Tests.Unit.Core.Models
 
                 filter.GetQuery();
             });
+        }
     }
 }

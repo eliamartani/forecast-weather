@@ -1,5 +1,5 @@
 {
   "default_country": "de",
-  "url": "https://localhost:5001/api/weather/forecast",
+  "url": "https://localhost:44337/api/weather/forecast",
   "urlIcon": "http://openweathermap.org/img/w/"
 }

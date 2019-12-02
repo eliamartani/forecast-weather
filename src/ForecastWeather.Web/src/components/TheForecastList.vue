@@ -1,16 +1,26 @@
 <template>
   <div>
-    <b-loading :is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
-    <div class="forecast" v-if="!isLoading && result && result.city">
+    <b-loading
+      :is-full-page="false"
+      :active.sync="isLoading"
+      :can-cancel="true"
+    />
+    <div
+      v-if="!isLoading && result && result.city"
+      class="forecast"
+    >
       <div class="columns">
         <div class="column is-block-tablet is-block-mobile is-half-tablet-only is-3-desktop">
           <iframe
             class="google_maps"
             width="303"
             height="277"
-            v-bind:src="[`https://maps.google.com/maps?q=${result.city.name}%2C${result.city.country}&t=&z=13&ie=UTF8&iwloc=&output=embed`]"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
+            :src="[`https://maps.google.com/maps?q=${result.city.name}%2C${result.city.country}&t=&z=13&ie=UTF8&iwloc=&output=embed`]"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          />
         </div>
         <div class="column is-half-tablet-only is-9-desktop is-tomorrow is-today">
           <template v-bind="tomorrow">
@@ -18,11 +28,16 @@
               <div class="columns">
                 <div class="column">
                   <h4 class="subtitle is-4 has-text-info">
-                    <span v-bind:class="['flag-icon', 'flag-icon-' + result.city.country.toLowerCase()]"></span>
-                    &nbsp;{{ result ? `${ result.city.name }, ${ result.city.country }` : '' }}
+                    <span :class="['flag-icon', 'flag-icon-' + result.city.country.toLowerCase()]" />
+                    &nbsp;
+                    {{ result ? `${ result.city.name }, ${ result.city.country }` : '' }}
                   </h4>
                   <p class="day-week">
-                    <img v-bind:src="[urlIcon + tomorrow.forecast.icon + '.png']" class="img-weather" alt="">
+                    <img
+                      :src="[urlIcon + tomorrow.forecast.icon + '.png']"
+                      class="img-weather"
+                      alt=""
+                    >
                   </p>
                   <p>
                     <span class="day-week">{{ moment(tomorrow.date).format('dddd') }}</span>
@@ -33,7 +48,7 @@
                 </div>
                 <div class="column column-middle">
                   <div class="table-days">
-                    <TheWeather :forecast=tomorrow.forecast />
+                    <TheWeather :forecast="tomorrow.forecast" />
                   </div>
                 </div>
               </div>
@@ -42,14 +57,26 @@
         </div>
       </div>
       <section>
-        <b-tabs position="is-centered" type="is-toggle-rounded" class="block">
+        <b-tabs
+          position="is-centered"
+          type="is-toggle-rounded"
+          class="block"
+        >
           <b-tab-item label="Next 5 days">
             <div class="columns other-days is-desktop">
-              <div class="column" v-for="(item, indexDay) in nextDays" v-bind:key="indexDay">
+              <div
+                v-for="(item, indexDay) in nextDays"
+                :key="indexDay"
+                class="column"
+              >
                 <div class="box">
                   <p>
                     <span class="day-week">
-                      <img v-bind:src="[urlIcon + item.forecast.icon + '.png']" class="img-weather" alt="">
+                      <img
+                        :src="[urlIcon + item.forecast.icon + '.png']"
+                        class="img-weather"
+                        alt=""
+                      >
                       <br>
                       {{ moment(item.date).format('dddd') }}</span>
                     <span class="day">
@@ -58,7 +85,7 @@
                     </span>
                   </p>
                   <div class="table-days">
-                    <TheWeather :forecast=item.forecast />
+                    <TheWeather :forecast="item.forecast" />
                   </div>
                 </div>
               </div>
@@ -66,14 +93,22 @@
           </b-tab-item>
           <b-tab-item label="History">
             <div class="columns is-history-list">
-              <div class="column" v-for="(historyItem, index) in resultHistory" :key="index">
+              <div
+                v-for="(historyItem, index) in resultHistory"
+                :key="index"
+                class="column"
+              >
                 <div class="box">
                   <span class="day-week">
-                    <img v-bind:src="[urlIcon + historyItem.icon + '.png']" class="img-weather" alt="">
+                    <img
+                      :src="[urlIcon + historyItem.icon + '.png']"
+                      class="img-weather"
+                      alt=""
+                    >
                     <br>
                     {{ historyItem.date }}
                   </span>
-                  <TheWeather :forecast=historyItem />
+                  <TheWeather :forecast="historyItem" />
                 </div>
               </div>
             </div>
@@ -85,13 +120,10 @@
 </template>
 
 <script>
-import TheWeather from './TheWeather'
-import api from '../data/api.json'
+import api from '@/data/api.json'
 import axios from 'axios'
 import moment from 'moment'
-import {
-  serverBus
-} from '../store'
+import { eventBus } from '@/store'
 import 'flag-icon-css/css/flag-icon.min.css'
 
 const defaultSettings = {
@@ -100,6 +132,9 @@ const defaultSettings = {
 }
 
 export default {
+  components: {
+    TheWeather: () => import('@/components/TheWeather')
+  },
   data () {
     return {
       isLoading: false,
@@ -109,12 +144,19 @@ export default {
       urlIcon: api.urlIcon
     }
   },
-  components: {
-    TheWeather
+  computed: {
+    nextDays () {
+      return this.result.listByDay.filter((item, index) => {
+        return index > 0
+      })
+    },
+    tomorrow () {
+      return this.result.listByDay[0]
+    }
   },
   created () {
     // receives value when event $emit is triggered
-    serverBus.$on('change', (query, value, country) => {
+    eventBus.$on('change', (query, value, country) => {
       if (!value) return
 
       this.searchValue = value
@@ -149,16 +191,6 @@ export default {
           this.error(error)
         })
     })
-  },
-  computed: {
-    nextDays () {
-      return this.result.listByDay.filter((item, index) => {
-        return index > 0
-      })
-    },
-    tomorrow () {
-      return this.result.listByDay[0]
-    }
   },
   methods: {
     error (data) {

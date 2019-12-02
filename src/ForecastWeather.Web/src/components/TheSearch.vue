@@ -1,15 +1,16 @@
 <template>
   <div>
     <b-autocomplete
-    v-model="city"
-    :data="filterAutocomplete"
-    :keep-first="true"
-    :loading="isLoading"
-    @input="getWrittenData"
-    icon="magnify"
-    ref="autocomplete"
-    placeholder="Type a City name or Postal code"
-    field="city">
+      ref="autocomplete"
+      v-model="city"
+      :data="filterAutocomplete"
+      :keep-first="true"
+      :loading="isLoading"
+      icon="magnify"
+      placeholder="Type a City name or Postal code"
+      field="city"
+      @input="getWrittenData"
+    >
       <template slot-scope="props">
         <span class="text-city">
           {{ props.option.city }}
@@ -23,9 +24,9 @@
 </template>
 
 <script>
-import dataCities from '../data/cities-de.json'
-import { removeDiacritics } from '../mixins/string'
-import { serverBus } from '../store'
+import dataCities from '@/data/cities-de.json'
+import { removeDiacritics } from '@/mixins/string'
+import { eventBus } from '@/store'
 
 export default {
   data () {
@@ -70,7 +71,7 @@ export default {
         if (!countryCode) countryCode = ''
 
         // triggers the API
-        serverBus.$emit('change', query, value, countryCode.trim())
+        eventBus.$emit('change', query, value, countryCode.trim())
 
         // hide loading icon
         this.isLoading = false

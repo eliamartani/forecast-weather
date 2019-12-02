@@ -3,8 +3,12 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <h1 class="title has-text-success">About</h1>
-          <h2 class="subtitle">Open source project that consumes OpenWeatherMap API</h2>
+          <h1 class="title has-text-success">
+            About
+          </h1>
+          <h2 class="subtitle">
+            Open source project that consumes OpenWeatherMap API
+          </h2>
           <p>Made by Eliamar Tani @eliamartani</p>
           <p>
             It uses:

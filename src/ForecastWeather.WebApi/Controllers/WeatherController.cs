@@ -1,4 +1,4 @@
-﻿using ForecastWeather.Core.Models;
+using ForecastWeather.Core.Models;
 using ForecastWeather.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -35,6 +35,12 @@ namespace ForecastWeather.WebApi.Controllers
         public async Task<WeatherResultByDay> Forecast(
             string city = null,
             string countryCode = null,
-            string zipCode = null) => await _weatherClient.GetData(new Filter(city, countryCode, zipCode));
+            string zipCode = null)
+        {
+            var filter = new Filter(city, countryCode, zipCode);
+            var response = await _weatherClient.GetData(filter);
+
+            return response;
+        }
     }
 }

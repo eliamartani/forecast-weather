@@ -1,25 +1,20 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace ForecastWeather.WebApi.Config
 {
     public static class SwaggerHelper
     {
-        public static void ConfigureSwagger(this IServiceCollection services) => services.AddSwaggerGen(options =>
+        public static void ConfigureSwagger(this IServiceCollection services)
         {
-            options.SwaggerDoc("v1", new Info
-            {
-                Title = "ForecastWeather.WebApi",
-                Version = "1.0.0",
-                Contact = new Contact
-                {
-                    Email = "eliamartani@gmail.com",
-                    Name = "Eliamar Tani",
-                    Url = "https://github.com/eliamartani/"
-                }
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo
+                    {
+                        Title = "ForecastWeather API",
+                    });
             });
-        });
+        }
 
         public static void Swagger(this IApplicationBuilder app)
         {

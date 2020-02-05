@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "buefy": "^0.8.10",
-    "flag-icon-css": "^3.4.5",
+    "flag-icon-css": "^3.4.6",
     "moment": "^2.24.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"

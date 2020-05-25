@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "buefy": "^0.8.19",
+    "buefy": "^0.8.20",
     "flag-icon-css": "^3.4.6",
     "moment": "^2.26.0",
     "vue": "^2.6.11",

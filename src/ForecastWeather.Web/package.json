@@ -14,7 +14,7 @@
     "flag-icon-css": "^3.5.0",
     "moment": "^2.26.0",
     "vue": "^2.6.11",
-    "vue-router": "^3.3.2"
+    "vue-router": "^3.3.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.1",

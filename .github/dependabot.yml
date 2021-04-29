@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/src/ForecastWeather.Web"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: buefy
+    versions:
+    - 0.9.6
+    - 0.9.7
+  - dependency-name: eslint
+    versions:
+    - 7.19.0
+    - 7.24.0
+  - dependency-name: less-loader
+    versions:
+    - 8.1.0
+  - dependency-name: "@vue/cli-plugin-babel"
+    versions:
+    - 4.5.12
+  - dependency-name: "@vue/cli-service"
+    versions:
+    - 4.5.12
+  - dependency-name: "@vue/cli-plugin-eslint"
+    versions:
+    - 4.5.12
+  - dependency-name: eslint-plugin-vue
+    versions:
+    - 7.6.0
+    - 7.7.0
+  - dependency-name: less
+    versions:
+    - 4.1.1

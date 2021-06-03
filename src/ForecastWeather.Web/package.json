@@ -13,7 +13,7 @@
     "buefy": "^1.0.0",
     "flag-icon-css": "^3.5.0",
     "moment": "^2.29.1",
-    "vue": "^2.6.12",
+    "vue": "^2.6.13",
     "vue-router": "^3.5.1"
   },
   "devDependencies": {
@@ -22,11 +22,11 @@
     "@vue/cli-service": "~4.5.13",
     "@vue/eslint-config-standard": "^6.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.26.0",
-    "eslint-plugin-vue": "^7.9.0",
+    "eslint": "^7.27.0",
+    "eslint-plugin-vue": "^7.10.0",
     "less": "^4.1.1",
     "less-loader": "^9.0.0",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.13"
   },
   "keywords": [],
   "license": "MIT"
